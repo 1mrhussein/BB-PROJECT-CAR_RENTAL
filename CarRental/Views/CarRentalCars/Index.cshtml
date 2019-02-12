@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CarRental.Data.CarRentalCar>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CarMake)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarIsAvailable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarPrice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarMake)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarIsAvailable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarPrice)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CarID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CarID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CarID })
+        </td>
+    </tr>
+}
+
+</table>
