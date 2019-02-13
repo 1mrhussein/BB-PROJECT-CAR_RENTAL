@@ -10,11 +10,10 @@ namespace CarRental.Services
 {
     public class CarServices
     {
-        public bool CreateCarRentalCar(CarRentalCar model)
+        public bool CreateCarRentalCar(CarCreate model)
         {
             var carRentalCar = new CarRentalCar()
             {
-                CarMake = model.CarMake,
                 CarModel = model.CarModel,
                 CarSize = model.CarSize,
                 CarYear = model.CarYear,
@@ -60,7 +59,6 @@ namespace CarRental.Services
                 var model = new CarRentalDetails()
                 {
                     CarID = entity.CarID,
-                    CarMake = entity.CarMake,
                     CarModel= entity.CarModel,
                     CarSize = entity.CarSize,
                     CarYear = entity.CarYear,
@@ -80,7 +78,6 @@ namespace CarRental.Services
                     .CarRentalCars.FirstOrDefault(c => c.CarID == model.CarID);
                 {
                     entity.CarID = model.CarID;
-                    entity.CarMake = model.CarMake;
                     entity.CarModel = model.CarModel;
                     entity.CarSize = model.CarSize;
                     entity.CarYear = model.CarYear;
@@ -101,6 +98,5 @@ namespace CarRental.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-
     }
 }

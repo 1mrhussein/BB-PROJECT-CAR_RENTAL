@@ -27,3 +27,35 @@ C:\DotNetBlueBadge\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.Core
 C:\DotNetBlueBadge\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.CopyComplete
 C:\DotNetBlueBadge\CarRental\CarRental.Data\obj\Debug\CarRental.Data.dll
 C:\DotNetBlueBadge\CarRental\CarRental.Data\obj\Debug\CarRental.Data.pdb
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\CarRental.Data.dll.config
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\CarRental.Data.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\CarRental.Data.pdb
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\EntityFramework.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.Security.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Newtonsoft.Json.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Owin.dll
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\EntityFramework.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.Security.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\BB PROJECT\CarRental\CarRental.Data\bin\Debug\Newtonsoft.Json.xml
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csprojAssemblyReference.cache
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.CoreCompileInputs.cache
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.CopyComplete
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.dll
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.pdb
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.InitialCreate.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.GenerateResource.cache
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.removing.resources

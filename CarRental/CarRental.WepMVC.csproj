@@ -174,7 +174,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CarRentalCarsController.cs" />
+    <Compile Include="Controllers\CarRentalCarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -242,15 +242,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\CarRentalCars\Create.cshtml" />
-    <Content Include="Views\CarRentalCars\Delete.cshtml" />
-    <Content Include="Views\CarRentalCars\Details.cshtml" />
-    <Content Include="Views\CarRentalCars\Edit.cshtml" />
-    <Content Include="Views\CarRentalCars\Index.cshtml" />
+    <Content Include="Views\CarRentalCar\Create.cshtml" />
+    <Content Include="Views\CarRentalCar\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -269,6 +265,14 @@
     <ProjectReference Include="..\CarRental.Data\CarRental.Data.csproj">
       <Project>{A6289E05-4D55-42E8-B284-AFC65FBAE987}</Project>
       <Name>CarRental.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarRental.Models\CarRental.Models.csproj">
+      <Project>{D33E6173-D106-4811-8ED5-89D77581CBA7}</Project>
+      <Name>CarRental.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarRental.Services\CarRental.Services.csproj">
+      <Project>{6611920A-B02E-4759-90F3-18D8CC097883}</Project>
+      <Name>CarRental.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

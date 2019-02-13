@@ -19,8 +19,6 @@ namespace CarRental.Data
         [Key]
         public int CarID { get; set; }
         [Required]
-        public string CarMake { get; set; } // ChevRollet, Tyota, Honda, etc
-        [Required]
         public string CarModel { get; set; } // Camery, Crolla, etc
         [Required]
         public int CarSize { get; set; }    // No of seats: 2, 4, 7

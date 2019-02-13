@@ -79,7 +79,6 @@
     <Compile Include="CarModels\CarRentalDetails.cs" />
     <Compile Include="CarModels\CarRentalEdit.cs" />
     <Compile Include="CarModels\CarRentalList.cs" />
-    <Compile Include="CarModels\ListCarAndUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

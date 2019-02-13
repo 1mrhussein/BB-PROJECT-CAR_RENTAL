@@ -68,3 +68,38 @@ C:\Users\EDUCATION\Desktop\ERRORS\CarRental\CarRental.Services\obj\Debug\CarRent
 C:\Users\EDUCATION\Desktop\ERRORS\CarRental\CarRental.Services\obj\Debug\CarRental.Services.csproj.CopyComplete
 C:\Users\EDUCATION\Desktop\ERRORS\CarRental\CarRental.Services\obj\Debug\CarRental.Services.dll
 C:\Users\EDUCATION\Desktop\ERRORS\CarRental\CarRental.Services\obj\Debug\CarRental.Services.pdb
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Services.dll.config
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Services.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Services.pdb
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Data.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Models.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\EntityFramework.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.Security.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Newtonsoft.Json.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Owin.dll
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Data.pdb
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Data.dll.config
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Models.pdb
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\CarRental.Models.dll.config
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\EntityFramework.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.Security.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\BB PROJECT\CarRental\CarRental.Services\bin\Debug\Newtonsoft.Json.xml
+C:\BB PROJECT\CarRental\CarRental.Services\obj\Debug\CarRental.Services.csprojAssemblyReference.cache
+C:\BB PROJECT\CarRental\CarRental.Services\obj\Debug\CarRental.Services.csproj.CoreCompileInputs.cache
+C:\BB PROJECT\CarRental\CarRental.Services\obj\Debug\CarRental.Services.csproj.CopyComplete
+C:\BB PROJECT\CarRental\CarRental.Services\obj\Debug\CarRental.Services.dll
+C:\BB PROJECT\CarRental\CarRental.Services\obj\Debug\CarRental.Services.pdb

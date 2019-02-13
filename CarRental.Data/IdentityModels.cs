@@ -33,8 +33,8 @@ namespace CarRental.Data
         }
 
         public DbSet<CarRentalCar> CarRentalCars { get; set; }
-        public DbSet<CarRentalCustomer> carRentalCustomers { get; set; }
-        public DbSet<CarRentalTransaction> carRentalTransactions { get; set; }
+        //public DbSet<CarRentalCustomer> carRentalCustomers { get; set; }
+        //public DbSet<CarRentalTransaction> carRentalTransactions { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

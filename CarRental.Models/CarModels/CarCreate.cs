@@ -10,9 +10,6 @@ namespace CarRental.Models.CarModels
     public class CarCreate
     {
         [Required]
-        public string CarMake { get; set; }
-
-        [Required]
         public string CarModel { get; set; }
 
         [Required]
