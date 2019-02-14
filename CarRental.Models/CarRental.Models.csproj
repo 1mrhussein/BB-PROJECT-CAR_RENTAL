@@ -75,10 +75,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CarModels\CarCreate.cs" />
-    <Compile Include="CarModels\CarRentalDetails.cs" />
-    <Compile Include="CarModels\CarRentalEdit.cs" />
-    <Compile Include="CarModels\CarRentalList.cs" />
+    <Compile Include="CarModels\ModelCarCreate.cs" />
+    <Compile Include="CarModels\ModelCarDetails.cs" />
+    <Compile Include="CarModels\ModelCarEdit.cs" />
+    <Compile Include="CarModels\ModelCarList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

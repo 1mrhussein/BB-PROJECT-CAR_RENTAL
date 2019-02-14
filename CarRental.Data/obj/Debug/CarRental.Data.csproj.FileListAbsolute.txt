@@ -59,3 +59,14 @@ C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.pdb
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.InitialCreate.resources
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.GenerateResource.cache
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.removing.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade1.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade01.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade02.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade03.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade04.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade05.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade07.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade09.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade10.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.ChangesMade11.resources

@@ -5,25 +5,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarRental.Data
+namespace CarRental.Models.CarModels
 {
-    //enum CarSize        // Not now, but may be will add
-    //{
-    //    Small,
-    //    Meddium,
-    //    Big
-    //};
-
-    public class CarRentalCar
+    public class ModelCarDetails
     {
-        [Key]
+        [Required]
         public int CarID { get; set; }
+
+        [Required]
+        public string CarMake { get; set; } // ChevRollet, Tyota, Honda, etc
+
         [Required]
         public string CarModel { get; set; } // Camery, Crolla, etc
+
         [Required]
         public int CarSize { get; set; }    // No of seats: 2, 4, 7
-        public bool CarIsAvailable { get; set; }
+
         public int CarYear { get; set; }
+
+        public bool CarIsAvailable { get; set; }
+
         public decimal CarPrice { get; set; }
     }
 }

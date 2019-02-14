@@ -1,13 +1,13 @@
-﻿@model IEnumerable<CarRental.Models.CarModels.CarRentalList>
+﻿@model IEnumerable<CarRental.Models.CarModels.ModelCarList>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Cars List</h2>
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add New Car", "Create")
 </p>
 <table class="table">
     <tr>
@@ -49,11 +49,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.CarYear)
         </td>
-        <td> 
-            $@Html.DisplayFor(modelItem => item.CarPrice)
+        <td>
+            @Html.DisplayFor(modelItem => item.CarPrice)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new {  id=item.CarID}) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.CarID }) |
             @Html.ActionLink("Details", "Details", new { id = item.CarID }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.CarID })
         </td>

@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace CarRental.Services
 {
-    public class CarServices
+    public class ServicesCar
     {
-        public bool CreateCarRentalCar(CarCreate model)
+        public bool SCarCreate(ModelCarCreate model)
         {
-            var carRentalCar = new CarRentalCar()
+            var carRentalCar = new DataCar()
             {
+                CarMake=model.CarMake,
                 CarModel = model.CarModel,
                 CarSize = model.CarSize,
                 CarYear = model.CarYear,
@@ -22,62 +23,63 @@ namespace CarRental.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.CarRentalCars.Add(carRentalCar);
+                ctx.DataCars.Add(carRentalCar);
                 return ctx.SaveChanges() == 1;
             }
         }
 
-        public IEnumerable<CarRentalList> GetCarList()
+        public IEnumerable<ModelCarList> SGetListCar()
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var query =
-                    ctx.CarRentalCars
-                    .Select(c=> new CarRentalList
+                var query = ctx.DataCars
+                    .Select(c=> new ModelCarList
                     {
-                        CarID = c.CarID,
+                        CarID = c.CarID,  
+                        CarMake=c.CarMake,
                         CarModel = c.CarModel,
                         CarSize = c.CarSize,
                         CarIsAvailable = c.CarIsAvailable,
                         CarYear = c.CarYear,
-                        CarPrice = c.CarPrice
+                        CarPrice = c.CarPrice,
                     }
                     );
                 return query.ToArray();
             }
         }
 
-        public CarRentalDetails GetById(int Id)
+        public ModelCarDetails SGetCarById(int Id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity = 
                     ctx
-                    .CarRentalCars
+                    .DataCars
                     .FirstOrDefault(c => c.CarID == Id);
 
-                var model = new CarRentalDetails()
+                var model = new ModelCarDetails()
                 {
                     CarID = entity.CarID,
                     CarModel= entity.CarModel,
                     CarSize = entity.CarSize,
                     CarYear = entity.CarYear,
                     CarIsAvailable = entity.CarIsAvailable,
-                    CarPrice = entity.CarPrice
+                    CarPrice = entity.CarPrice,
                 };
 
                 return model;
             }
         }
 
-        public bool EditCarRentalCar(CarRentalCar model)
+        public bool SCarUpdate(ModelCarEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity = ctx
-                    .CarRentalCars.FirstOrDefault(c => c.CarID == model.CarID);
+                    .DataCars.FirstOrDefault(c => c.CarID == model.CarID);
                 {
                     entity.CarID = model.CarID;
+                    entity.CarMake = model.CarMake;
                     entity.CarModel = model.CarModel;
                     entity.CarSize = model.CarSize;
                     entity.CarYear = model.CarYear;
@@ -88,13 +90,13 @@ namespace CarRental.Services
             }
         }
 
-        public bool DeleteCarRentalCar(int Id)
+        public bool SCarDelete(int Id)
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = ctx.CarRentalCars.Single(c => c.CarID == Id);
+                var entity = ctx.DataCars.Single(c => c.CarID == Id);
 
-                ctx.CarRentalCars.Remove(entity);
+                ctx.DataCars.Remove(entity);
                 return ctx.SaveChanges() == 1;
             }
         }

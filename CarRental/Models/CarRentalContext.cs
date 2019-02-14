@@ -19,6 +19,6 @@ namespace CarRental.Models
         {
         }
 
-        public System.Data.Entity.DbSet<CarRental.Data.CarRentalCar> CarRentalCars { get; set; }
+        public System.Data.Entity.DbSet<CarRental.Data.DataCar> CarRentalCars { get; set; }
     }
 }

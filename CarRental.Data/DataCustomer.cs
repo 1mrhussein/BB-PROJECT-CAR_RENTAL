@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarRental.Data
 {
-    public class CarRentalCustomer
+    public class DataCustomer
     {
 
     }

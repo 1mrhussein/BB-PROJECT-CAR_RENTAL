@@ -7,24 +7,27 @@ using System.Threading.Tasks;
 
 namespace CarRental.Models.CarModels
 {
-    public class CarRentalDetails
+    public class ModelCarList
     {
-        [Required]
+        [Display(Name = "ID")]
         public int CarID { get; set; }
 
         [Required]
         public string CarMake { get; set; } // ChevRollet, Tyota, Honda, etc
 
-        [Required]
+        [Display(Name ="MODEL")]
         public string CarModel { get; set; } // Camery, Crolla, etc
 
-        [Required]
+        [Display(Name = "SIZE")]
         public int CarSize { get; set; }    // No of seats: 2, 4, 7
 
-        public int CarYear { get; set; }
-
+        [Display(Name = "AVAILABLE")]
         public bool CarIsAvailable { get; set; }
 
+        [Display(Name = "YEAR")]
+        public int CarYear { get; set; }
+
+        [Display(Name = "PRICE")]
         public decimal CarPrice { get; set; }
     }
 }

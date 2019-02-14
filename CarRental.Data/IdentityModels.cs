@@ -32,7 +32,7 @@ namespace CarRental.Data
             return new ApplicationDbContext();
         }
 
-        public DbSet<CarRentalCar> CarRentalCars { get; set; }
+        public DbSet<DataCar> DataCars { get; set; }
         //public DbSet<CarRentalCustomer> carRentalCustomers { get; set; }
         //public DbSet<CarRentalTransaction> carRentalTransactions { get; set; }
 
