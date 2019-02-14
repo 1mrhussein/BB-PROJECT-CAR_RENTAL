@@ -175,11 +175,25 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CarController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902120429303_InitialCreate.cs" />
+    <Compile Include="Migrations\201902120429303_InitialCreate.Designer.cs">
+      <DependentUpon>201902120429303_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902142037552_CustT01.cs" />
+    <Compile Include="Migrations\201902142037552_CustT01.Designer.cs">
+      <DependentUpon>201902142037552_CustT01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902142043227_CustT02.cs" />
+    <Compile Include="Migrations\201902142043227_CustT02.Designer.cs">
+      <DependentUpon>201902142043227_CustT02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CarRentalContext.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -247,6 +261,11 @@
     <Content Include="Views\Car\Edit.cshtml" />
     <Content Include="Views\Car\Create.cshtml" />
     <Content Include="Views\Car\Delete.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Customer\Edit.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Customer\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,6 +297,17 @@
       <Project>{6611920A-B02E-4759-90F3-18D8CC097883}</Project>
       <Name>CarRental.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902120429303_InitialCreate.resx">
+      <DependentUpon>201902120429303_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902142037552_CustT01.resx">
+      <DependentUpon>201902142037552_CustT01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902142043227_CustT02.resx">
+      <DependentUpon>201902142043227_CustT02.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

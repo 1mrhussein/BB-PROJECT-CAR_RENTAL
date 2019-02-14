@@ -33,7 +33,7 @@ namespace CarRental.Data
         }
 
         public DbSet<DataCar> DataCars { get; set; }
-        //public DbSet<CarRentalCustomer> carRentalCustomers { get; set; }
+        public DbSet<DataCustomer> DataCustomers { get; set; }
         //public DbSet<CarRentalTransaction> carRentalTransactions { get; set; }
 
 

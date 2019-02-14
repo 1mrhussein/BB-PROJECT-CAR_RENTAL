@@ -79,57 +79,13 @@
     <Compile Include="DataCustomer.cs" />
     <Compile Include="DataTransaction.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\201902122048472_InitialCreate.cs" />
-    <Compile Include="Migrations\201902122048472_InitialCreate.Designer.cs">
-      <DependentUpon>201902122048472_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201902142046153_InitialCreate.cs" />
+    <Compile Include="Migrations\201902142046153_InitialCreate.Designer.cs">
+      <DependentUpon>201902142046153_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902122117022_removing.cs" />
-    <Compile Include="Migrations\201902122117022_removing.Designer.cs">
-      <DependentUpon>201902122117022_removing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902131534261_ChangesMade.cs" />
-    <Compile Include="Migrations\201902131534261_ChangesMade.Designer.cs">
-      <DependentUpon>201902131534261_ChangesMade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902131908498_ChangesMade1.cs" />
-    <Compile Include="Migrations\201902131908498_ChangesMade1.Designer.cs">
-      <DependentUpon>201902131908498_ChangesMade1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902131919519_ChangesMade01.cs" />
-    <Compile Include="Migrations\201902131919519_ChangesMade01.Designer.cs">
-      <DependentUpon>201902131919519_ChangesMade01.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902131930243_ChangesMade02.cs" />
-    <Compile Include="Migrations\201902131930243_ChangesMade02.Designer.cs">
-      <DependentUpon>201902131930243_ChangesMade02.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902131951477_ChangesMade03.cs" />
-    <Compile Include="Migrations\201902131951477_ChangesMade03.Designer.cs">
-      <DependentUpon>201902131951477_ChangesMade03.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902131953482_ChangesMade04.cs" />
-    <Compile Include="Migrations\201902131953482_ChangesMade04.Designer.cs">
-      <DependentUpon>201902131953482_ChangesMade04.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902132146018_ChangesMade05.cs" />
-    <Compile Include="Migrations\201902132146018_ChangesMade05.Designer.cs">
-      <DependentUpon>201902132146018_ChangesMade05.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902132205083_ChangesMade07.cs" />
-    <Compile Include="Migrations\201902132205083_ChangesMade07.Designer.cs">
-      <DependentUpon>201902132205083_ChangesMade07.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902132211429_ChangesMade09.cs" />
-    <Compile Include="Migrations\201902132211429_ChangesMade09.Designer.cs">
-      <DependentUpon>201902132211429_ChangesMade09.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902132216154_ChangesMade10.cs" />
-    <Compile Include="Migrations\201902132216154_ChangesMade10.Designer.cs">
-      <DependentUpon>201902132216154_ChangesMade10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902132222271_ChangesMade11.cs" />
-    <Compile Include="Migrations\201902132222271_ChangesMade11.Designer.cs">
-      <DependentUpon>201902132222271_ChangesMade11.cs</DependentUpon>
+    <Compile Include="Migrations\201902142213557_CustT03.cs" />
+    <Compile Include="Migrations\201902142213557_CustT03.Designer.cs">
+      <DependentUpon>201902142213557_CustT03.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,44 +95,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902122048472_InitialCreate.resx">
-      <DependentUpon>201902122048472_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902142046153_InitialCreate.resx">
+      <DependentUpon>201902142046153_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902122117022_removing.resx">
-      <DependentUpon>201902122117022_removing.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902131534261_ChangesMade.resx">
-      <DependentUpon>201902131534261_ChangesMade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902131908498_ChangesMade1.resx">
-      <DependentUpon>201902131908498_ChangesMade1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902131919519_ChangesMade01.resx">
-      <DependentUpon>201902131919519_ChangesMade01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902131930243_ChangesMade02.resx">
-      <DependentUpon>201902131930243_ChangesMade02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902131951477_ChangesMade03.resx">
-      <DependentUpon>201902131951477_ChangesMade03.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902131953482_ChangesMade04.resx">
-      <DependentUpon>201902131953482_ChangesMade04.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902132146018_ChangesMade05.resx">
-      <DependentUpon>201902132146018_ChangesMade05.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902132205083_ChangesMade07.resx">
-      <DependentUpon>201902132205083_ChangesMade07.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902132211429_ChangesMade09.resx">
-      <DependentUpon>201902132211429_ChangesMade09.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902132216154_ChangesMade10.resx">
-      <DependentUpon>201902132216154_ChangesMade10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902132222271_ChangesMade11.resx">
-      <DependentUpon>201902132222271_ChangesMade11.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902142213557_CustT03.resx">
+      <DependentUpon>201902142213557_CustT03.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

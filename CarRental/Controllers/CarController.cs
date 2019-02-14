@@ -63,6 +63,7 @@ namespace CarRental.Controllers
             var model = new ModelCarEdit
             {
                 CarID = details.CarID,
+                CarMake = details.CarMake,
                 CarModel = details.CarModel,
                 CarSize = details.CarSize,
                 CarYear = details.CarYear,
@@ -85,6 +86,7 @@ namespace CarRental.Controllers
                 return View(model);
             }
 
+
             var service = new ServicesCar();
 
             if (service.SCarUpdate(model))
@@ -96,7 +98,6 @@ namespace CarRental.Controllers
             ModelState.AddModelError("", "Your car could not be updated");
             return View(model);
         }
-
 
         //GET: Car/Delete/{id}
         [ActionName("Delete")]
@@ -120,7 +121,6 @@ namespace CarRental.Controllers
             TempData["SaveResult"] = "Your note was deleted";
 
             return RedirectToAction("Index");
-
         }
     }
 }

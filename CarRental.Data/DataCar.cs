@@ -21,8 +21,6 @@ namespace CarRental.Data
         [Required]
         public int CarSize { get; set; }    // No of seats: 2, 4, 7
 
-        public bool CarIsAvailable { get; set; }
-
         public int CarYear { get; set; }
 
         public decimal CarPrice { get; set; }

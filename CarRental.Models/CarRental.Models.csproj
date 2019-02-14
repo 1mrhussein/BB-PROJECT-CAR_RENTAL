@@ -79,10 +79,13 @@
     <Compile Include="CarModels\ModelCarDetails.cs" />
     <Compile Include="CarModels\ModelCarEdit.cs" />
     <Compile Include="CarModels\ModelCarList.cs" />
+    <Compile Include="CustomerModels\ModelCustomerCreate.cs" />
+    <Compile Include="CustomerModels\ModelCustomerDetails.cs" />
+    <Compile Include="CustomerModels\ModelCustomerEdit.cs" />
+    <Compile Include="CustomerModels\ModelCustomerList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CustomerModels\" />
     <Folder Include="TransactionModels\" />
   </ItemGroup>
   <ItemGroup>
