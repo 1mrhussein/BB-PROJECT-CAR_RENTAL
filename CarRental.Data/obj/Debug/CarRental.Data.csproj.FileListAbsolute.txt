@@ -59,3 +59,5 @@ C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.pdb
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.InitialCreate.resources
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.GenerateResource.cache
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.CustT03.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.Editnight.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.TableUpdate01.resources

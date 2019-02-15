@@ -19,5 +19,9 @@ namespace CarRental.Models.CarModels
         public int CarSize { get; set; }    // No of seats: 2, 4, 7
         public int CarYear { get; set; }
         public decimal CarPrice { get; set; }
+
+        public bool CarIsAvailable { get; set; }
+
+
     }
 }

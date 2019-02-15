@@ -24,5 +24,8 @@ namespace CarRental.Data
         public int CarYear { get; set; }
 
         public decimal CarPrice { get; set; }
+
+        public bool CarIsAvailable { get; set; }
+
     }
 }

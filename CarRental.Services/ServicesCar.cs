@@ -14,11 +14,13 @@ namespace CarRental.Services
         {
             var carRentalCar = new DataCar()
             {
-                CarMake=model.CarMake,
+                CarMake = model.CarMake,
                 CarModel = model.CarModel,
                 CarSize = model.CarSize,
                 CarYear = model.CarYear,
                 CarPrice = model.CarPrice,
+                CarIsAvailable = true
+
             };
 
             using (var ctx = new ApplicationDbContext())
@@ -33,15 +35,16 @@ namespace CarRental.Services
             using (var ctx = new ApplicationDbContext())
             {
                 var query = ctx.DataCars
-                    .Select(c=> new ModelCarList
+                    .Select(c => new ModelCarList
                     {
-                        CarID = c.CarID,  
-                        CarMake=c.CarMake,
+                        CarID = c.CarID,
+                        CarMake = c.CarMake,
                         CarModel = c.CarModel,
                         CarSize = c.CarSize,
-                        //CarIsAvailable = c.CarIsAvailable,
+                        CarIsAvailable = c.CarIsAvailable,
                         CarYear = c.CarYear,
                         CarPrice = c.CarPrice,
+
                     }
                     );
                 return query.ToArray();
@@ -52,7 +55,7 @@ namespace CarRental.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = 
+                var entity =
                     ctx
                     .DataCars
                     .FirstOrDefault(c => c.CarID == Id);
@@ -60,11 +63,11 @@ namespace CarRental.Services
                 var model = new ModelCarDetails()
                 {
                     CarID = entity.CarID,
-                    CarMake=entity.CarMake,
-                    CarModel= entity.CarModel,
+                    CarMake = entity.CarMake,
+                    CarModel = entity.CarModel,
                     CarSize = entity.CarSize,
                     CarYear = entity.CarYear,
-                    //CarIsAvailable = entity.CarIsAvailable,
+                    CarIsAvailable = entity.CarIsAvailable,
                     CarPrice = entity.CarPrice,
                 };
 
@@ -78,13 +81,14 @@ namespace CarRental.Services
             {
                 var entity = ctx
                     .DataCars.FirstOrDefault(c => c.CarID == model.CarID);
-                
-                    entity.CarMake = model.CarMake;
-                    entity.CarModel = model.CarModel;
-                    entity.CarSize = model.CarSize;
-                    entity.CarYear = model.CarYear;
-                    entity.CarPrice = model.CarPrice;
-                
+
+                entity.CarMake = model.CarMake;
+                entity.CarModel = model.CarModel;
+                entity.CarSize = model.CarSize;
+                entity.CarYear = model.CarYear;
+                entity.CarPrice = model.CarPrice;
+                entity.CarIsAvailable = model.CarIsAvailable;
+
 
                 return ctx.SaveChanges() == 1;
             }

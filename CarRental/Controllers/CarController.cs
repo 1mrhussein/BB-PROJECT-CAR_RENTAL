@@ -67,7 +67,8 @@ namespace CarRental.Controllers
                 CarModel = details.CarModel,
                 CarSize = details.CarSize,
                 CarYear = details.CarYear,
-                CarPrice = details.CarPrice
+                CarPrice = details.CarPrice,
+                CarIsAvailable=details.CarIsAvailable
             };
 
             return View(model);

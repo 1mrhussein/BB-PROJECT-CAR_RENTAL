@@ -29,5 +29,7 @@ namespace CarRental.Models.CarModels
 
         [Display(Name = "PRICE")]
         public decimal CarPrice { get; set; }
+
+
     }
 }
