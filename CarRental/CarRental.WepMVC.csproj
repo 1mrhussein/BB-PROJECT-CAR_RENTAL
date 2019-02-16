@@ -178,16 +178,9 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902120429303_InitialCreate.cs" />
-    <Compile Include="Migrations\201902120429303_InitialCreate.Designer.cs">
-      <DependentUpon>201902120429303_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902142037552_CustT01.cs" />
-    <Compile Include="Migrations\201902142037552_CustT01.Designer.cs">
-      <DependentUpon>201902142037552_CustT01.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201902142043227_CustT02.cs" />
     <Compile Include="Migrations\201902142043227_CustT02.Designer.cs">
@@ -211,6 +204,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -266,6 +260,8 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Customer\Delete.cshtml" />
     <Content Include="Views\Car\Edit.cshtml" />
+    <Content Include="Views\Transaction\Index.cshtml" />
+    <Content Include="Views\Transaction\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,12 +295,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902120429303_InitialCreate.resx">
-      <DependentUpon>201902120429303_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902142037552_CustT01.resx">
-      <DependentUpon>201902142037552_CustT01.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902142043227_CustT02.resx">
       <DependentUpon>201902142043227_CustT02.cs</DependentUpon>
     </EmbeddedResource>

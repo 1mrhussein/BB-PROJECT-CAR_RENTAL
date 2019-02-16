@@ -10,10 +10,8 @@ namespace CarRental.Data
     public class DataTransaction
     {
         [Key]
-        [Required]
         public int TransID { get; set; }
 
-        [Required]
         public DateTimeOffset TransDate { get; set; }
 
         [Required]
@@ -21,7 +19,7 @@ namespace CarRental.Data
 
         [Required]
         public DateTimeOffset RetunrDate { get; set; }
-
+        [Required]
         public decimal RentalAmount { get; set; }
 
         public bool CarIsAvailable { get; set; }
@@ -30,7 +28,6 @@ namespace CarRental.Data
 
         public int CarID { get; set; }
         public int CustomerID { get; set; }
-
 
         public virtual DataCustomer DataCustomer { get; set; }
         public virtual DataCar DataCar { get; set; }

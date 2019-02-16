@@ -9,7 +9,6 @@ namespace CarRental.Models.CustomerModels
 {
     public class ModelCustomerCreate
     {
-        [Key]
         [Required]
         [Display(Name = "ID")]
         public int CustomerID { get; set; }

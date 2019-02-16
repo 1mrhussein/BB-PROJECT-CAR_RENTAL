@@ -23,6 +23,7 @@ namespace CarRental.Services
 
             };
 
+
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.DataCars.Add(carRentalCar);
@@ -44,7 +45,6 @@ namespace CarRental.Services
                         CarIsAvailable = c.CarIsAvailable,
                         CarYear = c.CarYear,
                         CarPrice = c.CarPrice,
-
                     }
                     );
                 return query.ToArray();

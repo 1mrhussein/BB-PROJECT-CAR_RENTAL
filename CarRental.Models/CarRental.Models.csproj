@@ -84,10 +84,12 @@
     <Compile Include="CustomerModels\ModelCustomerEdit.cs" />
     <Compile Include="CustomerModels\ModelCustomerList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionModels\ModelTransactionCreate.cs" />
+    <Compile Include="TransactionModels\ModelTransactionDetails.cs" />
+    <Compile Include="TransactionModels\ModelTransactionEdit.cs" />
+    <Compile Include="TransactionModels\ModelTransactionList.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TransactionModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

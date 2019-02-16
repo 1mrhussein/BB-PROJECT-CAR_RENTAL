@@ -340,7 +340,5 @@ C:\BB PROJECT\CarRental\CarRental\bin\System.Diagnostics.DiagnosticSource.xml
 C:\BB PROJECT\CarRental\CarRental\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\BB PROJECT\CarRental\CarRental\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\BB PROJECT\CarRental\CarRental\obj\Debug\CarRental.WepMVC.csproj.CopyComplete
-C:\BB PROJECT\CarRental\CarRental\obj\Debug\CarRental.Migrations.InitialCreate.resources
 C:\BB PROJECT\CarRental\CarRental\obj\Debug\CarRental.WepMVC.csproj.GenerateResource.cache
-C:\BB PROJECT\CarRental\CarRental\obj\Debug\CarRental.Migrations.CustT01.resources
 C:\BB PROJECT\CarRental\CarRental\obj\Debug\CarRental.Migrations.CustT02.resources

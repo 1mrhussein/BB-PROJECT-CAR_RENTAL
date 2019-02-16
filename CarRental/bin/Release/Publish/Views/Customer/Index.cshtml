@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CarRental.Models.CustomerModels.ModelCustomerList>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerLiscenceNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerDOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerRegistredDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerLiscenceNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerDOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerRegistredDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.CustomerID}) |
+            @Html.ActionLink("Details", "Details", new { id=item.CustomerID  }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerID  })
+        </td>
+    </tr>
+}
+
+</table>
