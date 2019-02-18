@@ -87,7 +87,6 @@ namespace CarRental.Controllers
                 return View(model);
             }
 
-
             var service = new ServicesCar();
 
             if (service.SCarUpdate(model))

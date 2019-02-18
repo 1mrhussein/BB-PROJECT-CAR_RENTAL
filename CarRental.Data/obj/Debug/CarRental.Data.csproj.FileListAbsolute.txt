@@ -56,3 +56,5 @@ C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.CoreCompi
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.CopyComplete
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.dll
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.pdb
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.Migrations.mii.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Debug\CarRental.Data.csproj.GenerateResource.cache

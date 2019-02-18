@@ -79,12 +79,21 @@
     <Compile Include="DataCustomer.cs" />
     <Compile Include="DataTransaction.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\201902180536037_mii.cs" />
+    <Compile Include="Migrations\201902180536037_mii.Designer.cs">
+      <DependentUpon>201902180536037_mii.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902180536037_mii.resx">
+      <DependentUpon>201902180536037_mii.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

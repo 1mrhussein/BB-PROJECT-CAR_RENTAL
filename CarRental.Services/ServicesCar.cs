@@ -31,12 +31,35 @@ namespace CarRental.Services
             }
         }
 
+        // Get all 
         public IEnumerable<ModelCarList> SGetListCar()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query = ctx.DataCars
                     .Select(c => new ModelCarList
+                    {
+                        CarID = c.CarID,
+                        CarMake = c.CarMake,
+                        CarModel = c.CarModel,
+                        CarSize = c.CarSize,
+                        CarIsAvailable = c.CarIsAvailable,
+                        CarYear = c.CarYear,
+                        CarPrice = c.CarPrice,
+                    }
+                    );
+                return query.ToArray();
+            }
+        }
+
+        // Get availbale cars only
+
+        public IEnumerable<ModelCarList> SGetListAvalailableCars()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query = ctx.DataCars
+                    .Where(c=>c.CarIsAvailable).Select(c => new ModelCarList
                     {
                         CarID = c.CarID,
                         CarMake = c.CarMake,

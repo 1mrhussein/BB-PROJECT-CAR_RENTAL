@@ -12,10 +12,10 @@ namespace CarRental.Models.TransactionModels
         public DateTimeOffset TransDate { get; set; }
 
         [Required]
-        public DateTimeOffset PickUpDate { get; set; }
+        public DateTime PickUpDate { get; set; }
 
         [Required]
-        public DateTimeOffset RetunrDate { get; set; }
+        public DateTime RetunrDate { get; set; }
 
         public decimal RentalAmount { get; set; }
 
