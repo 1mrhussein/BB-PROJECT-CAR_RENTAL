@@ -9,6 +9,8 @@ namespace CarRental.Models.TransactionModels
 {
     public class ModelTransactionEdit
     {
+        public int TransID { get; set; }
+
         public DateTimeOffset TransDate { get; set; }
 
         [Required]

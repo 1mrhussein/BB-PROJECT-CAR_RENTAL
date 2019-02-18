@@ -16,14 +16,14 @@ namespace CarRental.Controllers
         {
             var service = new ServicesTransaction();
             var model = service.SGListTransaction();
-            
+
             return View(model);
         }
 
         // GET: Create
         public ActionResult Create()
         {
-            //Car Drop Down List
+            // Available Cars Drop Down List
             var carService = new ServicesCar();
             var carLis = carService.SGetListAvalailableCars();
 
@@ -43,7 +43,7 @@ namespace CarRental.Controllers
         public ActionResult Create(ModelTransactionCreate model)
         {
             //if (!ModelState.IsValid) return View();            
-            if (!ModelState.IsValid) return  RedirectToAction("Create");
+            if (!ModelState.IsValid) return RedirectToAction("Create");
 
             var service = new ServicesTransaction();
             if (service.STransactionCreate(model))
@@ -53,6 +53,80 @@ namespace CarRental.Controllers
 
             ModelState.AddModelError("", "Car could not be added!");
             return View(model);
+        }
+
+        // GET: Transaction/Details/{id}
+        public ActionResult Details(int id)
+        {
+            var service = new ServicesTransaction();
+            var model = service.SGetTransactionById(id);
+
+            return View(model);
+        }
+
+        // GET: Transaction/Edit/{id}
+        public ActionResult Edit(int id)
+        {
+            var sercive = new ServicesTransaction();
+            var details = sercive.SGetTransactionById(id);
+
+            var model = new ModelTransactionEdit()
+            {
+                PickUpDate = details.PickUpDate,
+                RetunrDate = details.RetunrDate,
+                RentalAmount=details.RentalAmount,
+                CarID=details.CarID
+
+            };
+
+            return View(model);
+        }
+
+        // POST: Transaction/Edit{id}
+        [HttpPost]
+        public ActionResult Edit(int id, ModelTransactionEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.TransID != id)
+            {
+                ModelState.AddModelError("", "Id mismatch!");
+                return View(model);
+            }
+
+            var service = new ServicesTransaction();
+
+            if (service.STransactionUpdate(model))
+            {
+                TempData["SaveResult"] = "Your transaction was updated";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your transaction could not be updated");
+            return View(model);
+        }
+
+        //GET: Transaction/Delete{id}
+        public ActionResult Delete(int id)
+        {
+            var service = new ServicesTransaction();
+            var model = service.SGetTransactionById(id);
+
+            return View(model);
+        }
+
+        //POST: Transaction/Delete{id}
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = new ServicesTransaction();
+            var model = service.STransactionDelete(id);
+
+            TempData["SaveResult"] = "Your transaction was deleted";
+
+            return RedirectToAction("Index");
         }
     }
 }

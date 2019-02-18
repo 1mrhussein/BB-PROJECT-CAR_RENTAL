@@ -1,0 +1,74 @@
+﻿@model CarRental.Models.TransactionModels.ModelTransactionDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ModelTransactionDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TransID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickUpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickUpDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RetunrDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RetunrDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TransID}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,80 @@
+﻿@model CarRental.Models.TransactionModels.ModelTransactionDetails
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ModelTransactionDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TransID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickUpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickUpDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RetunrDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RetunrDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

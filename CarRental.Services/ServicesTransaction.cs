@@ -12,6 +12,7 @@ namespace CarRental.Services
 {
     public class ServicesTransaction
     {
+        // Create Transaction 
         public bool STransactionCreate(ModelTransactionCreate model)
         {
             var transactionCreate = new DataTransaction()
@@ -29,9 +30,8 @@ namespace CarRental.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-              //  Check if car ID does not exist in DB, then give decision
+              //  Pull out the car In Transaction Process and Set Availablity to False afte transaction 
                 var car = ctx.DataCars.FirstOrDefault(c => c.CarID == transactionCreate.CarID);
-                if (car == null) return false;
 
                 car.CarIsAvailable = false;
 
@@ -40,6 +40,7 @@ namespace CarRental.Services
             }
         }
 
+        // List All Transactions
         public IEnumerable<ModelTransactionList> SGListTransaction()
         {
             using (var ctx = new ApplicationDbContext())
@@ -61,14 +62,66 @@ namespace CarRental.Services
             }
         }
 
+        // Get TransactionById-----Details
+        public ModelTransactionDetails SGetTransactionById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .DataTransactions
+                    .FirstOrDefault(t => t.TransID == id);
+
+                var model = new ModelTransactionDetails()
+                {
+                    TransID= entity.TransID,
+                    PickUpDate = entity.PickUpDate,
+                    RetunrDate = entity.RetunrDate,
+                    CarID=entity.CarID,
+                    RentalAmount = entity.RentalAmount,
+                    CustomerID=entity.CustomerID,
+                };
+
+                return model;
+            }
+        }
+
+        // Edit Transaction 
+        public bool STransactionUpdate(ModelTransactionEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx.DataTransactions.FirstOrDefault(t => t.TransID == model.TransID);
+
+                entity.PickUpDate = model.PickUpDate;
+                entity.RetunrDate = model.RetunrDate;
+                entity.CarID = model.CarID;
+
+                entity.RentalAmount = CalculateRentAmount(model.RentalAmount, model.PickUpDate, model.RetunrDate);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool STransactionDelete(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .DataTransactions
+                    .Single(t => t.TransID == id);
+
+                ctx.DataTransactions.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
         // Calculate rent based on number of days and rental amount
         private decimal CalculateRentAmount(decimal RentPrice, DateTime dPickup, DateTime dReturn)
         {
-            //var dt = new ModelTransactionCreate();
-
-            //DateTime PickUp = (dt.PickUpDate);
-            //DateTime Return = (dt.RetunrDate);
-
             TimeSpan TRDays = dReturn - dPickup;
 
             var days = Convert.ToDouble(TRDays.Days);
