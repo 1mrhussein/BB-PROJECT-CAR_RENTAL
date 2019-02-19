@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace CarRental.Controllers
 {
+    [Authorize]
     public class TransactionController : Controller
     {
         // GET: Transaction

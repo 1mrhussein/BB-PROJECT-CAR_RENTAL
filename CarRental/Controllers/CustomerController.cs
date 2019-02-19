@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace CarRental.Controllers
 {
+    [Authorize]     // To let access for only logged in users
     public class CustomerController : Controller
     {
         // GET: Customer
