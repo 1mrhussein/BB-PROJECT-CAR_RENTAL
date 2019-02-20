@@ -36,6 +36,12 @@ namespace CarRental.Controllers
 
             ViewBag.CustomerID = new SelectList(customerList, "CustomerID", "CustomerName");
 
+
+            var pickUpDate = new DateTime();
+            var pickUpDateList = pickUpDate.ToLongDateString();
+
+            ViewBag.PickUpDate = new SelectList(pickUpDateList, "PickUpDate", "PickUpDate");
+
             return View();
         }
 

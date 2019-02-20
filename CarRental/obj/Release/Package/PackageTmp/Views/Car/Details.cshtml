@@ -1,13 +1,13 @@
 ﻿@model CarRental.Models.CarModels.ModelCarDetails
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Car Details";
 }
 
 <h2>Details</h2>
 
-<div>
-    <h4>ModelCarDetails</h4>
+<div class="glyphicon-text-background: well">
+    <h4> @* Empty for now, but for subtitle later *@</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -61,6 +61,10 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CarID}) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CarID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.CarID })|
+
+    @Html.ActionLink("Back to Cars", "Index")
+
+   
 </p>

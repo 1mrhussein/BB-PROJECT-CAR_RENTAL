@@ -23,11 +23,6 @@ C:\BB PROJECT\CarRental\CarRental.Data\bin\Release\Microsoft.Owin.Security.Cooki
 C:\BB PROJECT\CarRental\CarRental.Data\bin\Release\Microsoft.Owin.Security.OAuth.xml
 C:\BB PROJECT\CarRental\CarRental.Data\bin\Release\Newtonsoft.Json.xml
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csprojAssemblyReference.cache
-C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.InitialCreate.resources
-C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.CustT03.resources
-C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.Editnight.resources
-C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.TableUpdate01.resources
-C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csproj.GenerateResource.cache
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csproj.CoreCompileInputs.cache
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csproj.CopyComplete
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.dll
