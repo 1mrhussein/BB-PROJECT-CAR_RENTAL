@@ -10,7 +10,7 @@
 <p>
     @Html.ActionLink("Add New Car", "Create")
 </p>
-<table class="table">
+<table class="table" style="background-color: lightgrey">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.CarID)
@@ -41,13 +41,13 @@
                 @* commented fot hyperlinking 
                     @Html.DisplayFor(modelItem => item.CarID)*@
 
-                <a href="/Car/Edit?id=@item.CarID">@item.CarID </a>
+                <a href="/Car/Details?id=@item.CarID">@item.CarID </a>
             </td>
             <td>
-                @* For ref how to hyperlink 
-                    <a href="/Car/Edit?id=@item.CarID">@item.CarModel </a>*@
+                 @*For ref how to hyperlink*@ 
+                    <a href="/Car/Details?id=@item.CarID">@item.CarModel </a>
                 
-                @Html.DisplayFor(modelItem => item.CarModel)
+                @*@Html.DisplayFor(modelItem => item.CarModel)*@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CarSize)

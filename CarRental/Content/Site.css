@@ -1,17 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    /*background-image: url('../assets/bg.jpg');*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: #8AAA55;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -35,7 +25,8 @@ textarea {
 }
 
 .navbar {
-    background-color: #0D324F;
+    /*background-color: #0D324F;*/
+    background-color: darkblue;
 }
 
 
