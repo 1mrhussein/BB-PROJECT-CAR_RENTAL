@@ -1,9 +1,9 @@
-namespace CarRental.Migrations
+namespace CarRental.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CustT02 : DbMigration
+    public partial class AzureDep01 : DbMigration
     {
         public override void Up()
         {

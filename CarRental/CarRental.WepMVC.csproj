@@ -176,11 +176,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902142043227_CustT02.cs" />
-    <Compile Include="Migrations\201902142043227_CustT02.Designer.cs">
-      <DependentUpon>201902142043227_CustT02.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CarRentalContext.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -344,11 +339,6 @@
       <Project>{6611920A-B02E-4759-90F3-18D8CC097883}</Project>
       <Name>CarRental.Services</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902142043227_CustT02.resx">
-      <DependentUpon>201902142043227_CustT02.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

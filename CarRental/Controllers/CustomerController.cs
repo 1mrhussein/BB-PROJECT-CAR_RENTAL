@@ -30,18 +30,17 @@ namespace CarRental.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ModelCustomerCreate model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            if (!ModelState.IsValid) return View(model);
 
             var service = new ServicesCustomer();
+
             if (service.SCustomerCreate(model))
             {
+                TempData["SaveCustomer"] = "A customer has been added";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError(" ", "Customer could not be added!");
+            ModelState.AddModelError(" ", "Customer could not be added!, Check customer age >18");
             return View(model);
         }
 

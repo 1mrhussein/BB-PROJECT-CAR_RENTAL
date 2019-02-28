@@ -27,3 +27,9 @@ C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csproj.CoreCom
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csproj.CopyComplete
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.dll
 C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.pdb
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.InitialCreate.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.CustomerNameAndCarModelInTheList.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.CustomerNameAndCarModelInTheList01.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.CustomerNameAndCarModelInTheList02.resources
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.csproj.GenerateResource.cache
+C:\BB PROJECT\CarRental\CarRental.Data\obj\Release\CarRental.Data.Migrations.AzureDep01.resources

@@ -25,7 +25,8 @@ namespace CarRental.Services
                 //CustomerIsRegistred=true,
                 //CarIsAvailable=true,
                 CustomerID = model.CustomerID, // from the method
-                CarID = model.CarID
+                CarID = model.CarID, 
+                
             };
 
             using (var ctx = new ApplicationDbContext())
@@ -54,8 +55,10 @@ namespace CarRental.Services
                         PickUpDate=t.PickUpDate,
                         RetunrDate=t.RetunrDate,
                         RentalAmount=t.RentalAmount,
-                        CustomerID=t.CustomerID,
-                        CarID=t.CarID
+                        //CustomerID=t.CustomerID,
+                        //CarID=t.CarID,
+                        CustomerName=t.DataCustomer.CustomerName,
+                        CarModel = t.DataCar.CarModel
                     }
                     );
                 return query.ToArray();

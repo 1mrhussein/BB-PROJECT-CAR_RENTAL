@@ -35,7 +35,10 @@ namespace CarRental.Models.TransactionModels
         [Display(Name ="Customer ID")]
         public int CustomerID { get; set; }
 
-            // Note necassery to have customer name in here
+        public string CustomerName { get; set; }
+        public string CarModel { get; set; }
+
+        // Note necassery to have customer name in here
         //[Display(Name ="Customer Name")]
         //public string CustomerName { get; set; }
 

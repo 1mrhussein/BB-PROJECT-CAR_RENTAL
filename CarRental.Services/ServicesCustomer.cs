@@ -23,11 +23,15 @@ namespace CarRental.Services
                 CustomerRegistredDate = DateTimeOffset.Now
             };
 
-            using (var ctx = new ApplicationDbContext())
+            if (AgeCheck(model.CustomerDOB.Year, DateTime.Now.Year, false))
             {
-                ctx.DataCustomers.Add(custCreate);
-                return ctx.SaveChanges() == 1;
+                using (var ctx = new ApplicationDbContext())
+                {
+                    ctx.DataCustomers.Add(custCreate);
+                    return ctx.SaveChanges() == 1;
+                }
             }
+            return false;
         }
 
         public IEnumerable<ModelCustomerList> SGetListCustomer()
@@ -60,12 +64,12 @@ namespace CarRental.Services
 
                 var model = new ModelCustomerDetails()
                 {
-                    CustomerID=entity.CustomerID,
-                    CustomerName=entity.CustomerName,
-                    CustomerPhone=entity.CustomerPhone,
-                    CustomerAddress=entity.CustomerAddress, 
-                    CustomerLiscenceNo=entity.CustomerLiscenceNo,
-                    CustomerDOB=entity.CustomerDOB
+                    CustomerID = entity.CustomerID,
+                    CustomerName = entity.CustomerName,
+                    CustomerPhone = entity.CustomerPhone,
+                    CustomerAddress = entity.CustomerAddress,
+                    CustomerLiscenceNo = entity.CustomerLiscenceNo,
+                    CustomerDOB = entity.CustomerDOB
                 };
 
                 return model;
@@ -95,7 +99,7 @@ namespace CarRental.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = 
+                var entity =
                     ctx
                     .DataCustomers
                     .Single(c => c.CustomerID == id);
@@ -103,6 +107,14 @@ namespace CarRental.Services
                 ctx.DataCustomers.Remove(entity);
                 return ctx.SaveChanges() == 1;
             }
+        }
+
+        public bool AgeCheck(int bYear, int cYear, bool age = false)
+        {
+            int CurrentAge = cYear -bYear;
+
+            if (CurrentAge >= 18) age = true;
+            return age;
         }
     }
 }

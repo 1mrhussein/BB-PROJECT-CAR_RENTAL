@@ -6,11 +6,28 @@
 
 <h2>Create</h2>
 
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+    <!--DOB DateTime Picker Begin-->
+    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+
+    @section Scripts {
+        @*@Scripts.Render("~/bundles/jqueryval")*@
+        <!--We don't need it here since the shared folder already has it -->
+
+        <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#CustomerDOB").datepicker();
+            });
+        </script>
+    }
+    <!--DOB DateTime Picker EnD-->
+
+
     <div class="form-horizontal">
         <h4>ModelCustomerCreate</h4>
         <hr />
@@ -67,6 +84,3 @@
     @Html.ActionLink("Back to List", "Index")
 </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}

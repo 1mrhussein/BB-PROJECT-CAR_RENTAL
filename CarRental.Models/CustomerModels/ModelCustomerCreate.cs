@@ -19,6 +19,7 @@ namespace CarRental.Models.CustomerModels
 
         [Required]
         [Display(Name ="Phone")]
+        [Range(1000000000, 2000000000)]
         public int CustomerPhone { get; set; }
 
         [Required]
@@ -27,6 +28,7 @@ namespace CarRental.Models.CustomerModels
 
         [Required]
         [Display(Name ="Liscence No")]
+        [Range(1000000000, 2000000000)]
         public int CustomerLiscenceNo { get; set; }
 
         [Required]

@@ -34,6 +34,7 @@ namespace CarRental.Models.CustomerModels
         public DateTime CustomerDOB { get; set; }
 
         [Required]
+        [Display(Name ="REG. DATE")]
         public DateTimeOffset CustomerRegistredDate { get; set; }
 
     }

@@ -21,9 +21,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    @*<li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                    <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
 
                     @*@if (User.Identity.IsAuthenticated)
                         {
@@ -31,9 +31,9 @@
 
                         }*@
 
-                    <li>@Html.ActionLink("Car", "Index", "Car")</li>
-                    <li>@Html.ActionLink("Customer", "Index", "Customer")</li>
-                    <li>@Html.ActionLink("Transaction", "Index", "Transaction")</li>
+                    <li>@Html.ActionLink("CAR", "Index", "Car")</li>
+                    <li>@Html.ActionLink("CUSTOMER", "Index", "Customer")</li>
+                    <li>@Html.ActionLink("TRANSACTION", "Index", "Transaction")</li>
 
                 </ul>
                 @Html.Partial("_LoginPartial")

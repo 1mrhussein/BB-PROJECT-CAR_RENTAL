@@ -30,14 +30,13 @@ namespace CarRental.Controllers
         [HttpPost]
         public ActionResult Create(ModelCarCreate model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            if (!ModelState.IsValid) return View(model);
 
             var service = new ServicesCar();
+
             if (service.SCarCreate(model))
             {
+                TempData["SaveCar"] = "Your car has been added";
                 return RedirectToAction("Index");
             }
 

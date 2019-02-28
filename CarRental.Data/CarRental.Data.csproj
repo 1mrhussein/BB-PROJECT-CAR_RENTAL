@@ -79,6 +79,27 @@
     <Compile Include="DataCustomer.cs" />
     <Compile Include="DataTransaction.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\201902202055146_InitialCreate.cs" />
+    <Compile Include="Migrations\201902202055146_InitialCreate.Designer.cs">
+      <DependentUpon>201902202055146_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902251733452_CustomerNameAndCarModelInTheList.cs" />
+    <Compile Include="Migrations\201902251733452_CustomerNameAndCarModelInTheList.Designer.cs">
+      <DependentUpon>201902251733452_CustomerNameAndCarModelInTheList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902251741076_CustomerNameAndCarModelInTheList01.cs" />
+    <Compile Include="Migrations\201902251741076_CustomerNameAndCarModelInTheList01.Designer.cs">
+      <DependentUpon>201902251741076_CustomerNameAndCarModelInTheList01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902251922107_CustomerNameAndCarModelInTheList02.cs" />
+    <Compile Include="Migrations\201902251922107_CustomerNameAndCarModelInTheList02.Designer.cs">
+      <DependentUpon>201902251922107_CustomerNameAndCarModelInTheList02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902260253345_AzureDep01.cs" />
+    <Compile Include="Migrations\201902260253345_AzureDep01.Designer.cs">
+      <DependentUpon>201902260253345_AzureDep01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +154,23 @@
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902202055146_InitialCreate.resx">
+      <DependentUpon>201902202055146_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902251733452_CustomerNameAndCarModelInTheList.resx">
+      <DependentUpon>201902251733452_CustomerNameAndCarModelInTheList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902251741076_CustomerNameAndCarModelInTheList01.resx">
+      <DependentUpon>201902251741076_CustomerNameAndCarModelInTheList01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902251922107_CustomerNameAndCarModelInTheList02.resx">
+      <DependentUpon>201902251922107_CustomerNameAndCarModelInTheList02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902260253345_AzureDep01.resx">
+      <DependentUpon>201902260253345_AzureDep01.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

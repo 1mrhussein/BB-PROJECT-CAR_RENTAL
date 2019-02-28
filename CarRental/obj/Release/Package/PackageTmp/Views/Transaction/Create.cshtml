@@ -16,22 +16,58 @@
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
+    <!--Below -->
     <!--We add below line to make the theme and have a good look-->
     <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
 
     @section Scripts {
-        @*@Scripts.Render("~/bundles/jqueryval")*@ 
+        @*@Scripts.Render("~/bundles/jqueryval")*@
         <!--We don't need it here since the shared folder already has it -->
+
         <script src="~/Scripts/jquery-3.3.1.min.js"></script>
         <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
 
+        @*<script>
+                $(document).ready(function () {
+                    $("#PickUpDate").datepicker();
+                    $("#RetunrDate").datepicker();
+                });
+            </script>*@
+
         <script>
             $(document).ready(function () {
-                $("#PickUpDate").datepicker();
-                $("#RetunrDate").datepicker();
+
+                $("#PickUpDate").datepicker({
+                    dateFormat: "dd-M-yy",
+                    minDate: 0,
+                    onSelect: function (date) {
+                        var date2 = $('#PickUpDate').datepicker('getDate');
+                        date2.setDate(date2.getDate() + 1);
+                        $('#RetunrDate').datepicker('setDate', date2);
+                        //sets minDate to dt1 date + 1
+                        $('#RetunrDate').datepicker('option', 'minDate', date2);
+                    }
+                });
+                $('#RetunrDate').datepicker({
+                    dateFormat: "dd-M-yy",
+                    onClose: function () {
+                        var dt1 = $('#PickUpDate').datepicker('getDate');
+                        var dt2 = $('#RetunrDate').datepicker('getDate');
+                        //check to prevent a user from entering a date below date of dt1
+                        if (dt2 <= dt1) {
+                            var minDate = $('#RetunrDate').datepicker('option', 'minDate');
+                            $('#RetunrDate').datepicker('setDate', minDate);
+                        }
+                    }
+                });
             });
         </script>
+
+
     }
+    <!--Above-->
+
+
 
 
     <div class="form-group">

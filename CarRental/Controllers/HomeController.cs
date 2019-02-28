@@ -15,15 +15,13 @@ namespace CarRental.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = "Welcome to my car rental application. I am Mohamed Hussein, a Software Developer";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = "If you have questions please contact.";
             return View();
         }
     }

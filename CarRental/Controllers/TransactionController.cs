@@ -18,6 +18,10 @@ namespace CarRental.Controllers
             var service = new ServicesTransaction();
             var model = service.SGListTransaction();
 
+            var carService = new ServicesCar();
+            var cModLis = carService.SGetListAvalailableCars();
+            ViewBag.CarID = new SelectList(cModLis, "CarID", "CarModel");
+
             return View(model);
         }
 
@@ -35,13 +39,7 @@ namespace CarRental.Controllers
             var customerList = customerService.SGetListCustomer();
 
             ViewBag.CustomerID = new SelectList(customerList, "CustomerID", "CustomerName");
-
-
-            var pickUpDate = new DateTime();
-            var pickUpDateList = pickUpDate.ToLongDateString();
-
-            ViewBag.PickUpDate = new SelectList(pickUpDateList, "PickUpDate", "PickUpDate");
-
+            
             return View();
         }
 
@@ -55,7 +53,8 @@ namespace CarRental.Controllers
             var service = new ServicesTransaction();
             if (service.STransactionCreate(model))
             {
-                return RedirectToAction("Index"/*,""*/);
+                TempData["SaveTransaction"] = "Your transaction has been added";
+                return RedirectToAction("Index");
             }
 
             ModelState.AddModelError("", "Car could not be added!");
@@ -83,7 +82,6 @@ namespace CarRental.Controllers
                 RetunrDate = details.RetunrDate,
                 RentalAmount=details.RentalAmount,
                 CarID=details.CarID
-
             };
 
             return View(model);
